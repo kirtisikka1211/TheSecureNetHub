@@ -1,0 +1,150 @@
+.container {
+    width: 800px; /* Set the width of the container */
+    height: 450px; /* Set the height of the container */
+    display: flex;
+ 
+}
+
+
+.card {
+    min-width: 250px;
+    max-width: 300px;
+    height: 250px;
+    background-color:  #131926;
+    margin-right: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: white;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+
+.dummy_page {
+  height: 200px;
+  width: 100%;
+  background-color: #f0f0f0;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 60px 0px;
+}
+
+
+.cards-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  margin: 10px 10px 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .cards-container {
+      flex-direction: column;
+      align-items: center;
+      margin: 10px; 
+  }
+  .card {
+      margin-right: 0; /* Remove right margin for cards in column layout */
+      margin-bottom: 20px; /* Add space between cards */
+      max-width: 100%; /* Adjust card width for smaller screens */
+  }
+}
+.container {
+    width: 800px;
+    height: 400px;
+    display: flex;
+    overflow: hidden; /* Hide both horizontal and vertical scrollbars */
+}
+
+.cards-container {
+    display: flex;
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    scroll-behavior: smooth;
+    margin: 15px;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.cards-container::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar in Webkit browsers (Chrome, Safari, etc.) */
+}
+
+.card {
+    min-width: 250px;
+    max-width: 300px;
+    height: 250px;
+    background-color:  #131926;
+    margin-right: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: white;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Your other styles... */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+    max-width: 100%; /* Adjust the max-width as needed */
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.gif {
+    flex: 1; /* Take up 50% of the width */
+    background-color: #131926;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: flex;
+    margin-left: 35px;
+    
+}
+
+img {
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.content-box {
+    flex: 10; /* Take up 50% of the width */
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 18px;
+    padding: 25px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  
+    
+}
+
+@media screen and (max-width: 767px) {
+    .flex-container {
+        flex-direction: column; /* Stack elements in a column for smaller screens */
+    }
+
+    .gif,
+    .content-box {
+        flex: 10; /* Equal width for both elements */
+        border-radius: 8px; /* Revert to equal border-radius */
+        margin: 15px; /* Restore margin */
+       
+    }
+}

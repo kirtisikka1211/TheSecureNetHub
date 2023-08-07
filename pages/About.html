@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/about.css">
+    <link rel="stylesheet" href="/styles/global.css" />
+
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <title>Contributors Page</title>
+    <header>
+        <h1>Contributors</h1>
+    </header>
+    <main>
+        <section class="contributors">
+            <div class="contributor">
+                <div class="circle">
+                    <img src="../public/kirti.jpeg" alt="Kirti">
+                </div>
+                <h2><a href="https://amritauniv-my.sharepoint.com/:f:/g/personal/am_en_u4aie22126_am_students_amrita_edu/Eu3qpwY-6_RAlqNff3PRbL8BPYfgT6tpwnwx-Kq5C6uvFA?e=cyDgEn"
+                    target="_blank"
+                    >Kirti Sikka</a></h2>
+            </div>
+            <div class="contributor">
+                <div class="circle">
+                    <img src="../public/gayathri.jpg" alt="Gayathri">
+                </div>
+                <h2><a target="_blank"
+                        href="https://amritauniv-my.sharepoint.com/personal/am_en_u4aie22117_am_students_amrita_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fam%5Fen%5Fu4aie22117%5Fam%5Fstudents%5Famrita%5Fedu%2FDocuments%2FSemII%2FUID%2FResume&ga=1">
+                        Gayathri B Nair</a></h2>
+            </div>
+            <div class="contributor">
+                <div class="circle">
+                    <img src="images/contributor3.jpg" alt="KP">
+                </div>
+                <h2><a href="https://amritauniv-my.sharepoint.com/:f:/g/personal/am_en_u4aie22129_am_students_amrita_edu/EjhMmwwQYJJOvQp9Lb6fH1IBd6PSY3QSIQIQfuIUYyYInw?e=36lcy5"
+                    target="_blank">
+                    Krishna Prabha S</a></h2>
+            </div>
+            <div class="contributor">
+                <div class="circle">
+                    <img src="images/contributor4.jpg" alt="Sangeetha">
+                </div>
+                <h2><a href="https://amritauniv-my.sharepoint.com/:f:/g/personal/am_en_u4aie22136_am_students_amrita_edu/EqyzM0NagM9OlMGoPUQ-e1EB1Sz_IzdwUd0mzp9l6Dm3IA?e=Exbw5K"
+                    target="_blank">
+                    N. Sangeetha</a></h2>
+            </div>
+        </section>
+    </main>
+    <div id="footer-placeholder"></div>
+
+
+
+</body>
+<script src="/scripts/nav.js"></script>
+<script>
+    fetch('/components/navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+
+    fetch('/components/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+</script>
+<script src="/scripts/nav.js"></script>
+<script>
+    fetch('/components/navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+
+    fetch('/components/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+
+   
+</script>
+
+</html>
+
+</html>

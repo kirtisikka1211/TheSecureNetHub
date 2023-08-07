@@ -1,0 +1,212 @@
+.about-page-child,
+.group-child {
+  position: absolute;
+  top: 133px;
+  left: 264px;
+  width: 260px;
+  height: 21px;
+}
+.group-child {
+  top: 6.61px;
+  left: 0;
+  background-color: var(--color-gray-100);
+  width: 1090.69px;
+  height: 1390.4px;
+  transform: rotate(-0.35deg);
+  transform-origin: 0 0;
+}
+.rectangle-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1099.1px;
+  height: 1396.98px;
+}
+.terms-of-services {
+  color: var(--color-greenyellow);
+}
+.i-accept-terms-container {
+  position: absolute;
+  top: 1002px;
+  left: 331px;
+  font-size: 22px;
+  font-weight: 500;
+  font-family: var(--font-roboto);
+  display: inline-block;
+  width: 504px;
+}
+.group-item {
+  position: absolute;
+  top: 518px;
+  left: 205px;
+  width: 678px;
+  height: 115px;
+}
+.group-inner,
+.group-item,
+.rectangle-div {
+  background-color: var(--color-gray-300);
+}
+.group-inner {
+  position: absolute;
+  top: 356px;
+  left: 205px;
+  width: 678px;
+  height: 115px;
+}
+.rectangle-div {
+  top: 661px;
+}
+.group-child1,
+.group-child2,
+.rectangle-div {
+  position: absolute;
+  left: 205px;
+  width: 678px;
+  height: 115px;
+}
+.group-child1 {
+  top: 804px;
+  background-color: var(--color-gray-300);
+}
+.group-child2 {
+  top: 1089px;
+  background-color: #232a39;
+}
+.confirm-password,
+.password,
+.register {
+  position: absolute;
+  top: 698px;
+  left: 248px;
+  font-weight: 300;
+}
+.confirm-password,
+.register {
+  top: 841px;
+  left: 245px;
+}
+.register {
+  top: 1122px;
+  left: 482px;
+  color: #abb2c2;
+}
+.sername {
+  color: var(--color-honeydew);
+}
+.email,
+.username {
+  position: absolute;
+  top: 400px;
+  left: 251px;
+  font-weight: 300;
+}
+.email {
+  top: 562px;
+  left: 252px;
+}
+.rectangle-icon {
+  position: absolute;
+  top: 998px;
+  left: 300px;
+  width: 39px;
+  height: 34px;
+}
+.create-your-account {
+  margin: 0;
+}
+.join-thousands-of {
+  margin: 0;
+  color: var(--color-greenyellow);
+}
+.create-your-account-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 500;
+}
+.create-your-account-join-thou-wrapper {
+  position: absolute;
+  top: 246px;
+  left: 242px;
+  width: 546px;
+  height: 106px;
+  font-size: var(--font-size-26xl);
+  color: var(--color-honeydew);
+  font-family: var(--font-roboto);
+}
+.group-parent {
+  position: absolute;
+  top: 116px;
+  left: 1149px;
+  width: 1099.1px;
+  height: 1396.98px;
+  font-size: var(--font-size-6xl);
+  font-family: var(--font-readex-pro);
+}
+.about-page-item {
+  position: absolute;
+  top: 57.61px;
+  left: -239px;
+  background-color: var(--color-gray-100);
+  width: 1255px;
+  height: 1806.07px;
+  transform: rotate(-0.35deg);
+  transform-origin: 0 0;
+}
+.screenshot-2023-07-21-at-300 {
+  position: absolute;
+  top: calc(50% - 98px);
+  left: 111px;
+  width: 135px;
+  height: 76px;
+  object-fit: cover;
+}
+.screenshot-2023-07-21-at-245-icon {
+  position: absolute;
+  top: 335px;
+  left: 140px;
+  width: 675px;
+  height: 120px;
+  object-fit: cover;
+}
+.screenshot-2023-07-21-at-3001,
+.screenshot-2023-07-21-at-3002 {
+  position: absolute;
+  top: calc(50% - 374px);
+  left: 111px;
+  width: 135px;
+  height: 76px;
+  object-fit: cover;
+}
+.screenshot-2023-07-21-at-3002 {
+  top: calc(50% - 236px);
+}
+.join-the-community,
+.show-skills,
+.train-like-a {
+  position: absolute;
+  top: 545px;
+  left: 269px;
+  font-weight: 500;
+}
+.show-skills,
+.train-like-a {
+  top: 689px;
+  left: 272px;
+}
+.show-skills {
+  top: 827px;
+  left: 297px;
+}
+.about-page {
+  position: relative;
+  background-color: var(--color-gray-200);
+  width: 100%;
+  height: 1804px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-26xl);
+  color: var(--color-white);
+  font-family: var(--font-roboto);
+}

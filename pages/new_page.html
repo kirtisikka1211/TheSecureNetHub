@@ -1,0 +1,89 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/global.css"/>
+    <link rel="stylesheet" href="/styles/newpage.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <div class="container">
+        
+        <div class="flex-container">
+            
+                
+           
+            <div class="content-box">
+                <h1 style=" color:rgb(105, 200, 10);"> The World of Cybersecurity </h1>
+                
+                <p>  As technology continues to advance, the importance of cybersecurity has become <br> more critical than ever. With the increasing reliance on digital platforms and  <br> communication,your data, devices, and online presence is paramount. In this guide, <br>  you'll learn about the basics of cybersecurity, common threats,  and more.</p>
+            </div>
+            <div class="gif">
+                <img src="/public/hacker.gif" height="400rem" loop="infinite" />
+            </div>
+        </div>
+    </div>
+    <div class="cards-container">
+        <div class="card">
+            <h2 style=" color:rgb(105, 200, 10);">Cryptography</h2>
+            <p>Cryptography is the practice of secure communication techniques. It involves techniques like encryption and decryption to protect information.</p>
+        </div>
+        <div class="card">
+            <h2 style=" color:rgb(105, 200, 10)">Network Security</h2>
+            <p>Network security focuses on protecting computer networks from unauthorized access or attacks. It includes technologies like firewalls, intrusion detection systems, and more.</p>
+        </div>
+        <div class="card">
+            <h2  style=" color:rgb(105, 200, 10)">Forensics</h2>
+            <p>Digital forensics involves investigating and recovering information from digital devices. It's often used to solve cybercrimes and analyze digital evidence.</p>
+        </div>
+        <div class="card">
+            <h2 style=" color:rgb(105, 200, 10)">Reversing</h2>
+            <p>Reverse engineering involves analyzing and understanding the inner workings of software, hardware, or systems to gain insights or create alternatives.</p>
+        </div>
+        <div class="card">
+            <h2 style=" color:rgb(105, 200, 10)">Hardware</h2>
+            <p>Hardware security focuses on protecting physical devices and components from tampering, theft, or unauthorized access.</p>
+        </div>
+        <div class="card">
+            <h2  style=" color:rgb(105, 200, 10)">Blockchain</h2>
+            <p>Blockchain is a decentralized and secure way to record and verify transactions. It's the underlying technology behind cryptocurrencies like Bitcoin.</p>
+        </div>
+        <div class="card">
+            <h2  style=" color:rgb(105, 200, 10)">Information Security</h2>
+            <p>Information security involves protecting sensitive information from unauthorized access, use, disclosure, disruption, modification, or destruction.</p>
+        </div>
+    </div>
+
+
+    
+   
+
+    <script src="/scripts/nav.js"></script>
+
+    <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+       
+        fetch('/components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+            
+    </script>
+</body>
+
+</html>

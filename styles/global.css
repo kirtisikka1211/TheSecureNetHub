@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  line-height: normal;
+  background-color: #131926;
+}
+
+:root {
+  /* fonts */
+  --font-roboto: Roboto;
+  --font-readex-pro: "Readex Pro";
+
+  /* font sizes */
+  --font-size-26xl: 45px;
+  --font-size-6xl: 25px;
+
+  /* Colors */
+  --color-gray-100: #1c2331;
+  --color-gray-200: #161d2a;
+  --color-gray-300: #131926;
+  --color-white: #fff;
+  --color-greenyellow: #9fef00;
+  --color-honeydew: #edf8ee;
+}
