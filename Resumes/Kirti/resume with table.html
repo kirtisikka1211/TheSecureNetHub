@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+  <title>Resume</title>
+  <link rel="stylesheet" href="scroll.css">
+  <style>
+    .banner {
+
+      padding-bottom: 80px;
+      padding-top: 40px;
+      /* height: 10vh; */
+      justify-self: start;
+      place-self: start;
+      align-self: start;
+      align-items: start;
+      width: 100%;
+
+      background: url("overlay.png"), url("background.jpg");
+      background-position: center;
+      background-size: cover;
+      /* background-repeat: no-repeat; */
+      /* background-blend-mode: overlay; */
+      color: white;
+    }
+
+    label {
+      text-align: center;
+    }
+
+    body {
+      background-color: #000000c4;
+    }
+
+    table,
+    tr,
+    th,
+    td {
+      border: 2px hidden;
+      border-collapse: collapse;
+      padding: 10px;
+      border-spacing: 5px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      text-align: center;
+      font-weight: medium;
+    }
+
+    .intro {
+      text-align: center;
+      font-weight: bold;
+      font-size: 25px;
+      font-family: 'Courier New', monospace;
+      /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    }
+
+    .stuff {
+      border-style: solid;
+      border-width: 28px;
+      border-top-color: #d383e7;
+      border-bottom-color: #d383e7;
+      border-left-color: #96958f;
+      border-right-color: #96958f;
+      background-color: white;
+      width: 50%;
+      margin: auto;
+      margin-top: 0%;
+      border-radius: 10px;
+
+    }
+
+    th {
+      background-color: #d3d2cd6b;
+    }
+
+    td {
+      background-color: #d383e741;
+    }
+
+    .head {
+      font-weight: bold;
+      font-size: 23px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .content {
+      padding: 20px;
+      /* font-weight: bold; */
+      /* font-size: large; */
+      font-size: large;
+      font-family: Georgia, serif;
+    }
+
+    .row {
+      text-align: center;
+      padding: 12px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .column {
+      flex: 13.33%;
+      padding: 5px;
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+
+    li {
+      padding: 5px;
+      font-size: 19px;
+      font-weight: 500;
+    }
+
+    .links {
+      font-weight: 500;
+      font-size: 18px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .links a:link {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    .links a:visited {
+      color: white;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    .links a:hover {
+      color: #48d8ddec;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    img {
+      border-radius: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .tlink {
+      text-decoration: none;
+    }
+
+    .tlink:hover {
+      text-decoration: none;
+    }
+
+    .tlink {
+      text-decoration: none;
+      position: relative;
+    }
+
+    .tlink:after {
+      border-radius: 1em;
+      border-top: .1em solid #b706e4;
+      content: "";
+      position: absolute;
+      right: 100%;
+      bottom: .14em;
+      left: 0;
+      transition: right .4s cubic-bezier(0, .5, 0, 1);
+    }
+
+    .tlink:hover:after {
+      right: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="stuff">
+    <div class="banner">
+      <div class="intro">
+        <h1>Resume</h1>
+        <div class="pimg">
+          <img class="picture" src="WhatsApp Image 2023-05-02 at 15.43.22.jpeg" width="200px" height="200px" />
+          <div class="middle">
+            <div class="ptext">Hello</div>
+          </div>
+        </div>
+
+        <h2>Kirti Sikka</h2>
+        <h4>Age: 19 years</h4>
+        <p class="links"><a href="#interests">Interests</a> > <a href="#skills">Skills</a> > <a
+            href="#education">Education</a> > <a href="#experience">Experience</a> > <a
+            href="#extracurriculars">Extracurriculars</a> > <a href="#social">Social</a></p>
+      </div>
+      <div class="scroll-downs">
+        <a href="#interests">
+          <div class="mousey">
+            <div class="scroller"></div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="content">
+      <p class="head" id="interests">Interests</p>
+      <ul>
+        <li>Aerobics</li>
+        <li>Reading</li>
+        <li>UI/UX Design</li>
+        <li>Programming</li>
+      </ul>
+      <p class="head" id="skills">Skills</p>
+      <ul>
+        <li>Web development</li>
+        <li>Android development</li>
+        <li>Figma designing</li>
+      </ul>
+      <p class="head" id="education">Education</p>
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Qualifications</th>
+              <th>Institutions</th>
+              <th>Board/university</th>
+              <th>Year of completion</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10th Class</td>
+              <td>
+                <a href="https://www.smsmayurvihar.org/" class="tlink">St. Mary's Sr. Sec. School</a>
+              </td>
+              <td>CBSE Delhi</td>
+              <td>2019</td>
+            </tr>
+            <tr>
+              <td>12th Class</td>
+              <td>
+                <a href="https://www.smsmayurvihar.org/" class="tlink">St. Mary's Sr. Sec. School</a>
+              </td>
+              <td>CBSE Delhi</td>
+              <td>2021</td>
+            </tr>
+            <tr>
+              <td>B.Tech</td>
+
+              <td>
+                <a href="https://www.amrita.edu/ " class="tlink">Amrita Vishwa Vidhyapeetham</a>
+              </td>
+              <td>Amrita University</td>
+              <td>2026</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <p class="head" id="experience">Experience</p>
+      <ul>
+
+        <li>Freelancing</li>
+      </ul>
+      <p class="head" id="extracurriculars">Extracurriculars</p>
+      <ul>
+        <li>Member at amFOSS</li>
+        <li>National Aerobics Player</li>
+      </ul>
+      <p class="head" id="social">Social Profiles</p>
+      <div class="row">
+        <div class="column">
+          <a href="https://github.com/kirtisikka1211">
+            <img src="github-mark.png" alt="Github" style="width: 28%; padding-bottom: 10px;" />
+
+          </a>
+
+          <label>Github</label>
+        </div>
+        <div class="column">
+          <a href="https://www.linkedin.com/in/kirtisikka1211/">
+            <img src="linkedin1.png" alt="LinkedIn" style="width: 29.5%; padding-bottom: 5px" />
+          </a>
+          <label>LinkedIn</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NMAP</title>
+    <style>
+        body{
+            background-color: rgb(5, 2, 22);
+            color: #0ea00e;
+        }
+
+        .div1{
+            display: flex;
+            height: 200px;
+            width: 100px;
+
+        }
+    </style>
+</head>
+<body>
+    <p><b>WHAT IS NMAP?</b><br><br>
+        <div class="div1">
+            <img src="/SecureNetHub-main/public/movies_nmap.jpg">
+        </div>
+        <br>
+        <br>
+        NMAP is a free open source networking tool that helps to discover hosts and services running 
+        in the target computer by sending and analyzing packets. 
+        What exactly is a port?
+        Port is a virtual concept. Its a point where connections start and end. Each port is 
+        associated with a protocol. Its like a door through which only certain protocols have entry 
+        and these doors are numbered. For example, while emails(SMTP, POP3 etc) go through a port, 
+        websites are connected through another port for http. 
+        
+        <b>WHAT ARE THE MAIN FUNCTIONALITIES OF NMAP?</b><br><Br>
+        <ul><li> NMAP  can provide useful information about the target users, including the device 
+            specifications like MAC specifications.</li>
+           
+            <li>It can list the alive hosts on the network by analyzing the response to TCP/ICMP 
+            packets.</li>
+            <li>It can list out all the open ports on the target computer or the network.</li>
+            <li>OS detection– performing an nmap can find the specifications about the OS and the 
+            hardware characteristics.</li>
+            <li>Version detection – it can identify the service application and version of the 
+            application thet is being used currently.</li>
+            <li>Scripts – it provides a number of simple scripts to automate a lot of network tasks 
+            like brute forcing, bypassing authentication, DOS attacks, exploits etc.</li>
+        </ul>
+        <b><br><br>
+        MAIN COMMANDS<br><br>
+        OS DETECTION 
+        </b>
+        NMAP's one of the best features is <i>os detection</i>
+        its achieved using tcp/ip stack fingerprinting. this is done by the tcp/ip fingerprinting by 
+        setting flags that different os and versions reply to differently. numerous tcp packets are 
+        sent and the responses are compared to the base cases from the nmap-os-db fingerprints and the
+         os id determined. each of these fingerprints contains the description of the os, and 
+         additional informations like the vendor, underlying os, generation, device type aslo a cpe 
+         representation.
+         <br>
+         <br>
+        
+        Lets see some of the most used flags:<br>
+        
+        -o - this flag is used to enable os detection. <br>
+        
+        --osscan-limit - usually, the os scan is done effectively when there is atleast one open and 
+        one closed TCP port are present. with this flag, we can limit the detection preocesses to the 
+        targets that pass these criterias. <br>
+        
+        --osscan-guess - as the name suggests, nmap guesses the os if it cant find a near-perfect 
+        match. this flag along with --fuzzy helps the tool to guess the os more aggressively. <br>
+        
+        --max-os-tries - when nmap fails to find a match for the match, the attempt to find it is 
+        repeated. when this flag value is dset to 1, or any lower value, this attempt is sped up. But 
+        by doing this, we are actually restricting the tool to skip over some of the trials where there
+        are better chances of finding the os details. so usually, the value is set to a higher value.
+        <br>
+        </p>
+</body>
+</html>

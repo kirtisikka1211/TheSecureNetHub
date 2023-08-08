@@ -47,12 +47,12 @@
 
           }
           .topnav .hh:hover {
-         
-          
+            background-color: #bfb6b6;
+            color: black;
+            border-radius: 35px;
             transition: background-color 0.3s, border-radius 0.3s;
-        }
-        
-          
+
+          }
          
           .rect {
             margin: 30px 50px 3px 50px ;
@@ -130,19 +130,22 @@
         <a href="/pages/practice.html">Practice</a>
         <a href="/pages/roadmap.html">Roadmaps</a>
         <a href="/pages/test.html">Profile</a>
-    
-        <div class="dropdown-content">
-            <a href="#home">Home</a>
-            <a href="#news">News</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-        </div>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
         </a>
 
       </div>
 
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
 
 
 

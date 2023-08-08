@@ -4,96 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="rect.css">
-    <style>
+    <link rel="stylesheet" href="../styles/rect.css">
+    <link rel="stylesheet" href="/styles/global.css" />
 
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #a1e3ff; 
-        /* Set the background color for the entire page  */
-    }
-    .main {
-        margin: 0;
-        padding: 0;
-        width: auto;
-        /* / Align children vertically at the center / */
-    
-    }
-    
-    .mainRectangle {
-        padding: 20px;
-        margin: 20px auto;
-        border: 1px solid black;
-        width: 200px;
-        height: 100px;
-        background-color: #feb385;
-    }
-
- 
-    
-    .subContainer {
-        display: flex;
-        justify-content: center; 
-        /* / Align children horizontally at the center */ 
-    }
-    
-    .subRectangle {
-        text-align: center;
-        padding: 20px;
-        margin-top: 10px;
-        margin-left: 30px;
-        margin-right: 30px;
-        margin-bottom: 10px;
-        border: 1px solid black;
-        width: 200px;
-        height: 100px;
-        background-color: #fcf0f0;
-    }
-    
-    .emptyRectangle {
-        text-align: center;
-        padding: 20px;
-        margin-top: 10px;
-        margin-left: 30px;
-        margin-right: 30px;
-        margin-bottom: 10px;
-        
-        width: 200px;
-        height: 100px;
-        
-    }
-    .Rectangle1 {
-        padding: 20px;
-        margin-right:44.5% ;
-        border: 1px solid black;
-        width: 200px;
-        height: 70px;
-        float:right;
-        background-color: #fcf0f0;
-    }
-    .container {
-display: flex;
-flex-direction: column;
-align-items: center; /* Horizontal alignment of content */
-/* You can also use "justify-content" property to control vertical alignment if needed */
-}
-.centered-element {
-padding: 50px 0;
-}
-.place-arrow {
-position: absolute;
-transform: translate(-50%, -50%);
-
-}
-@media only screen and (max-width: 800px) {
-  .main{
-    width: 64rem;
-  }
-}
-    </style>
 </head>
+
 <body>
+    <div id="navbar-placeholder"></div>
+
     <div class="main">
         <span>
            <div class="mainRectangle">
@@ -206,7 +124,58 @@ transform: translate(-50%, -50%);
             </div>
         </div>
         </div>
-    </div>
+    </div><div id="footer-placeholder"></div>
+
+
+
 </body>
+<script src="/scripts/nav.js"></script>
+<script>
+    fetch('/components/navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+
+    fetch('/components/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+</script>
+<script src="/scripts/nav.js"></script>
+<script>
+    fetch('/components/navbar.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('navbar-placeholder').innerHTML = data;
+        });
+
+    fetch('/components/footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        });
+
+    const readMoreButton = document.getElementById('read-more-button');
+    const moreContent = document.querySelector('.more-content');
+
+    readMoreButton.addEventListener('click', () => {
+        if (moreContent.style.display === 'none') {
+            moreContent.style.display = 'block';
+            readMoreButton.innerText = 'Read Less';
+        } else {
+            moreContent.style.display = 'none';
+            readMoreButton.innerText = 'Read More';
+        }
+    });
+
+    // Add a click event listener to navigate to "actualpractice.html"
+    readMoreButton.addEventListener('click', () => {
+        window.location.href = 'actualpractice.html';
+    });
+</script>
+
 </html>
 
+</html>

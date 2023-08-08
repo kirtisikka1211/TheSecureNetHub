@@ -18,35 +18,39 @@
     <main>
         <section class="contributors">
             <div class="contributor">
-                <div class="circle">
-                    <img src="../public/kirti.jpeg" alt="Kirti">
+                <div class="circle"><a href="../Resumes/Kirti/resume with table.html"
+                    target="_blank">
+                    <img src="../public/kirti.jpeg" alt="Kirti"></a>
                 </div>
-                <h2><a href="https://amritauniv-my.sharepoint.com/:f:/g/personal/am_en_u4aie22126_am_students_amrita_edu/Eu3qpwY-6_RAlqNff3PRbL8BPYfgT6tpwnwx-Kq5C6uvFA?e=cyDgEn"
-                    target="_blank"
-                    >Kirti Sikka</a></h2>
+                <h2><a href="../Resumes/Kirti/resume with table.html"
+                    target="_blank" style="color: rgb(110, 205, 15);">
+                    Kirti Sikka</a></h2>
             </div>
             <div class="contributor">
-                <div class="circle">
-                    <img src="../public/gayathri.jpg" alt="Gayathri">
+                <div class="circle"><a target="_blank"
+                    href="../Resumes/Gayathri/index.html" >
+                    <img src="../public/gayathri.jpg" alt="Gayathri"></a>
                 </div>
-                <h2><a target="_blank"
-                        href="https://amritauniv-my.sharepoint.com/personal/am_en_u4aie22117_am_students_amrita_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fam%5Fen%5Fu4aie22117%5Fam%5Fstudents%5Famrita%5Fedu%2FDocuments%2FSemII%2FUID%2FResume&ga=1">
+                <h2><a target="_blank" style="color: rgb(110, 205, 15);"
+                        href="../Resumes/Gayathri/index.html">
                         Gayathri B Nair</a></h2>
             </div>
             <div class="contributor">
                 <div class="circle">
-                    <img src="images/contributor3.jpg" alt="KP">
+                    <a href="../Resumes/KP/resume1.html"
+                    target="_blank" ><img src="../public/KP.jpg" alt="KP"></a>
                 </div>
-                <h2><a href="https://amritauniv-my.sharepoint.com/:f:/g/personal/am_en_u4aie22129_am_students_amrita_edu/EjhMmwwQYJJOvQp9Lb6fH1IBd6PSY3QSIQIQfuIUYyYInw?e=36lcy5"
-                    target="_blank">
+                <h2><a href="../Resumes/KP/resume1.html"
+                    target="_blank" style="color: rgb(110, 205, 15);">
                     Krishna Prabha S</a></h2>
             </div>
             <div class="contributor">
-                <div class="circle">
-                    <img src="images/contributor4.jpg" alt="Sangeetha">
+                <div class="circle"><a href="../Resumes/Sangeetha/RESUME.html"
+                    target="_blank" >
+                    <img src="../public/sangeetha.jpg" alt="Sangeetha"></a>
                 </div>
-                <h2><a href="https://amritauniv-my.sharepoint.com/:f:/g/personal/am_en_u4aie22136_am_students_amrita_edu/EqyzM0NagM9OlMGoPUQ-e1EB1Sz_IzdwUd0mzp9l6Dm3IA?e=Exbw5K"
-                    target="_blank">
+                <h2><a href="../Resumes/Sangeetha/RESUME.html"
+                    target="_blank" style="color: rgb(110, 205, 15);">
                     N. Sangeetha</a></h2>
             </div>
         </section>
@@ -84,7 +88,23 @@
             document.getElementById('footer-placeholder').innerHTML = data;
         });
 
-   
+    const readMoreButton = document.getElementById('read-more-button');
+    const moreContent = document.querySelector('.more-content');
+
+    readMoreButton.addEventListener('click', () => {
+        if (moreContent.style.display === 'none') {
+            moreContent.style.display = 'block';
+            readMoreButton.innerText = 'Read Less';
+        } else {
+            moreContent.style.display = 'none';
+            readMoreButton.innerText = 'Read More';
+        }
+    });
+
+    // Add a click event listener to navigate to "actualpractice.html"
+    readMoreButton.addEventListener('click', () => {
+        window.location.href = 'actualpractice.html';
+    });
 </script>
 
 </html>
