@@ -148,3 +148,16 @@ img {
        
     }
 }
+@keyframes zoomIn {
+    from {
+        transform: scale(1.5);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+
+.card:hover {
+    animation: zoomIn 0.3s ease-out;
+}

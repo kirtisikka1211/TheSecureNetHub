@@ -58,10 +58,10 @@
             <button class="submit-btn"  id="submit-button">Submit</button>
 
          
-            <div class="dialog-box" id="dialog-box">
-                <p>Your message has been submitted successfully!</p>
-            </div>
-          </div>
+          <div class="dialog-box" id="dialog-box">
+    <p>Your message has been submitted successfully!</p>
+    <button id="ok-button">OK</button>
+</div>
           
         </form>
       </div>
@@ -86,14 +86,14 @@
       document.getElementById('footer-placeholder').innerHTML = data;
     });
     document.getElementById('submit-button').addEventListener('click', function() {
-      // Show the dialog box
+     
       const dialogBox = document.getElementById('dialog-box');
       dialogBox.style.display = 'block';
 
-      // After a delay, hide the dialog box
+     
       setTimeout(function() {
           dialogBox.style.display = 'none';
-      }, 7000); // Adjust the delay as needed (3000ms = 3 seconds)
+      }, 7000); 
   });
 </script>
 

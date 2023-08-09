@@ -5,25 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NMAP</title>
     <style>
-        body{
-            background-color: rgb(5, 2, 22);
-            color: #0ea00e;
-        }
+     
+      
 
-        .div1{
-            display: flex;
-            height: 200px;
-            width: 100px;
-
+        .card {
+            background-color:#060f22;
+            color: rgb(247, 247, 247);
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+            margin: 40px 40px; /* Add margin for spacing */
+            flex-direction: column; /* Arrange content vertically */
+            justify-content: center; /* Align content vertically center */
+            align-items: center; 
         }
+        
     </style>
 </head>
 <body>
-    <p><b>WHAT IS NMAP?</b><br><br>
-        <div class="div1">
-            <img src="/SecureNetHub-main/public/movies_nmap.jpg">
-        </div>
+    <div id="navbar-placeholder"></div>
+    <div class="content-container">
+
+    <div class="card">
+        <h1 style="text-align:center ;color: rgb(145, 232, 59)">WHAT IS NMAP?</h1>
+        
         <br>
+        <iframe src="//www.youtube.com/embed/SZQz9tkEHIg"  style="margin: 0 auto; width: 100%; height: 440px " frameborder="0" allowfullscreen></iframe>
         <br>
         NMAP is a free open source networking tool that helps to discover hosts and services running 
         in the target computer by sending and analyzing packets. 
@@ -78,5 +86,24 @@
         are better chances of finding the os details. so usually, the value is set to a higher value.
         <br>
         </p>
+    </div>
+    </div>
+    <div id="footer-placeholder"></div>
+
 </body>
+
+<script>
+    fetch('/components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+            
+</script>
 </html>
