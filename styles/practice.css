@@ -9,7 +9,9 @@
   box-sizing: border-box;
 }
 
-
+.correct-answer {
+  color:greenyellow;
+}
 
 body {
   color: #272727;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,12 @@
     <link rel="stylesheet" href="/styles/global.css" />
     <link rel="stylesheet" href="/styles/practice.css" />
 </head>
+
 <body>
     <div id="navbar-placeholder"></div>
     <div class="main">
         <h1 style="color:aliceblue">Cybersecurity Practice Quiz</h1>
-        
+
         <h2 style="color:aliceblue">Cryptography</h2>
         <div class="quiz-question">
             <p>What does SSL stand for?</p>
@@ -20,7 +22,7 @@
             <label><input type="radio" name="q1" value="c"> Safe Server Link</label><br>
             <label><input type="radio" name="q1" value="d"> Secret Security Loop</label><br>
         </div>
-        
+
         <div class="quiz-question">
             <p>Which encryption algorithm is considered secure for modern use?</p>
             <label><input type="radio" name="q2" value="a"> Caesar Cipher</label><br>
@@ -28,7 +30,7 @@
             <label><input type="radio" name="q2" value="c"> AES</label><br>
             <label><input type="radio" name="q2" value="d"> Substitution Cipher</label><br>
         </div>
-        
+
         <h2 style="color:aliceblue">Packet Capture (PCAP)</h2>
         <div class="quiz-question">
             <p>What tool is commonly used to capture network packets?</p>
@@ -37,7 +39,7 @@
             <label><input type="radio" name="q3" value="c"> Ping</label><br>
             <label><input type="radio" name="q3" value="d"> Telnet</label><br>
         </div>
-        
+
         <div class="quiz-question">
             <p>What file format is commonly used for storing captured packets?</p>
             <label><input type="radio" name="q4" value="a"> .txt</label><br>
@@ -45,12 +47,12 @@
             <label><input type="radio" name="q4" value="c"> .docx</label><br>
             <label><input type="radio" name="q4" value="d"> .exe</label><br>
         </div>
-        
+
         <button class="btn card_btn" id="quiz">Submit quiz</button>
     </div>
-    
+
     <div id="footer-placeholder"></div>
-    
+
     <script src="/scripts/nav.js"></script>
     <script>
         fetch('/components/navbar.html')
@@ -64,6 +66,36 @@
             .then(data => {
                 document.getElementById('footer-placeholder').innerHTML = data;
             });
+
+        document.getElementById("quiz").addEventListener("click", function () {
+            // Check and highlight correct answers
+            checkAndHighlightAnswers();
+        });
+
+        function checkAndHighlightAnswers() {
+            // Clear existing highlighting
+            const labels = document.querySelectorAll("label");
+            labels.forEach(label => {
+                label.classList.remove("correct-answer");
+            });
+
+            // Check and highlight correct answers
+            const correctAnswers = {
+                q1: "a",
+                q2: "c",
+                q3: "b",
+                q4: "b"
+            };
+
+            for (const question in correctAnswers) {
+                const selectedAnswer = document.querySelector(`input[name="${question}"]:checked`);
+                if (selectedAnswer && selectedAnswer.value === correctAnswers[question]) {
+                    const label = selectedAnswer.parentNode;
+                    label.classList.add("correct-answer");
+                } 
+            }
+        }
     </script>
 </body>
+
 </html>
