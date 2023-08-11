@@ -78,8 +78,36 @@ body {
     transform: translate(-50%, -50%);
 }
 
-@media only screen and (max-width: 800px) {
+.main {
+    /* Original styles for .main */
+    text-align: center;
+}
+
+.subContainer {
+    /* Original styles for .subContainer */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.container {
+    /* Original styles for .container */
+    width: calc(33.33% - 20px); /* Adjust the width for responsiveness */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
     .main {
-        width: 64rem;
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .subContainer {
+        flex-direction: column; /* Stack elements vertically on small screens */
+    }
+
+    .container {
+        width: 100%; /* Full width for containers on small screens */
     }
 }
