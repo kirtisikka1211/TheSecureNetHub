@@ -1,4 +1,3 @@
-// nav.js
 const cardContainer = document.querySelector('.cards-container');
 const prevButton = document.querySelector('.prev-btn');
 const nextButton = document.querySelector('.next-btn');
