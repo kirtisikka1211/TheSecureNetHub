@@ -95,6 +95,16 @@
                 } 
             }
         }
+        const slidingSidebar = document.getElementById('slidingSidebar');
+        const slidingToggleButton = document.getElementById('sliding-toggle-button');
+
+        slidingToggleButton.addEventListener('click', () => {
+            if (slidingSidebar.style.right === '-250px') {
+                slidingSidebar.style.right = '0';
+            } else {
+                slidingSidebar.style.right = '-250px';
+            }
+        });
     </script>
 </body>
 

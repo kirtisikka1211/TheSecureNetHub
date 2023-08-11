@@ -19,6 +19,23 @@
             flex-direction: column; /* Arrange content vertically */
             justify-content: center; /* Align content vertically center */
             align-items: center; 
+            overflow: hidden;
+
+
+        }
+        @media screen and (min-width: 768px) {
+            /* Adjust the styling for larger screens */
+            .card {
+                width: 90%; /* Adjust the width */
+                margin: 10px auto; /* Center the card */
+            }
+        }
+        @media screen and (max-width: 768px) {
+            /* Adjust the styling for larger screens */
+            .card {
+                width: 70%; /* Adjust the width */
+                margin: 8px auto; /* Center the card */
+            }
         }
         
     </style>
@@ -97,7 +114,7 @@
     <div id="footer-placeholder"></div>
 
 </body>
-
+<script src="/scripts/nav.js"></script>
 <script>
     fetch('/components/navbar.html')
             .then(response => response.text())
