@@ -82,12 +82,19 @@
        
       
 
-        fetch('/components/footer.html')
-            .then(response => response.text())
-            .then(data => {
+        window.onload = function() {
+            fetch('/components/footer.html')
+              .then(response => response.text())
+              .then(data => {
                 document.getElementById('footer-placeholder').innerHTML = data;
-            });
+              });
             
+            // Redirect to home page after a reload
+            if (performance.navigation.type === 1) {
+                window.location.href = '/pages/home.html'; // Replace with the actual path to your home page
+            }
+        }
+              
     </script>
 </body>
 
