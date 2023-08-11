@@ -18,7 +18,7 @@
     position: absolute;
     height: 5.65%;
     width: 5.29%;
-    top: 37.92%;
+    top: 26%;
     right: 70.37%;
     bottom: 56.43%;
     left: 15.34%;
@@ -30,12 +30,14 @@
   }
   .securenethub {
     position: absolute;
-    height: 45.34%;
-    width: 74.38%;
-    top: 36.97%;
-    left: 12.81%;
+    top: 29%; /* Vertically center */
+    left: 50%; /* Horizontally center */
+    transform: translate(-50%, -50%); /* Adjust for centering */
     display: inline-block;
-  }
+    font-size: 128px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
   .about-page {
     position: relative;
     background-color: #161d2a;
