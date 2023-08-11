@@ -58,10 +58,13 @@
             <button class="submit-btn"  id="submit-button">Submit</button>
 
          
-          <div class="dialog-box" id="dialog-box">
-    <p>Your message has been submitted successfully!</p>
-    <button id="ok-button">OK</button>
-</div>
+            <div class="dialog-box" id="dialog-box">
+              <p>Your message has been submitted successfully!</p>
+              <div class="button-container">
+                <button id="ok-button">OK</button>
+                <button id="cancel-button">Cancel</button>
+              </div>
+            </div>
           
         </form>
       </div>
@@ -85,15 +88,20 @@
     .then(data => {
       document.getElementById('footer-placeholder').innerHTML = data;
     });
-    document.getElementById('submit-button').addEventListener('click', function() {
-     
-      const dialogBox = document.getElementById('dialog-box');
-      dialogBox.style.display = 'block';
+    const dialogBox = document.getElementById('dialog-box');
+  const okButton = document.getElementById('ok-button');
+  const cancelButton = document.getElementById('cancel-button');
 
-     
-      setTimeout(function() {
-          dialogBox.style.display = 'none';
-      }, 7000); 
+  document.getElementById('submit-button').addEventListener('click', function() {
+    dialogBox.style.display = 'block';
+  });
+
+  okButton.addEventListener('click', function() {
+    dialogBox.style.display = 'none';
+  });
+
+  cancelButton.addEventListener('click', function() {
+    dialogBox.style.display = 'none';
   });
 </script>
 
